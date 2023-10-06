@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Show the Basics</title>
+</head>
+<body>
+    <div id="namePrompt"> <!-- Creates the div for the prompt to get the first name of the user -->
+        <label for="firstName">Please enter your first name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <button type="button" id="nameBtn" onclick="firstName()">Submit</button> <!-- Executes the firstName function -->
+        <br><br>
+    </div>
+    <div id="numberDiv" hidden> <!-- Creates the div for the prompt to get the user's favorite number but has it hidden till they enter their name -->
+        <br>
+        <label for="myFavNum">Please enter your favorite number:</label> 
+        <input type="number" id="myFavNum" name="myFavNum">
+        <button type="button" id="numBtn" onclick="calcNum()">Submit</button> <!-- Executes the calcNum function to print the variables -->
+        <br><br>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
