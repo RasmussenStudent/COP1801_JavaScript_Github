@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Module 04 Assignment - Script Creation</title>
+</head>
+<body>
+    <div class="container">
+        <header>Tip Calculator</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Total Dollar Amount</span>
+                    <!-- Setup the div to enter the bill amount -->
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="dollarAmount">Enter the Amount:</label>
+                            <input type="text" id="dollarAmount" name="dollarAmount" placeholder="Just the numbers eg: 0.00">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Rate the Service</span>
+                    <!-- Setup a selector for the tip -->
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="service">Tip for Service:</label>
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Select Service Rating</option>
+                                <option value="Great">Great Service (20%)</option>
+                                <option value="Okay">Okay Service (15%)</option>
+                                <option value="Poor">Poor Service (10%)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Totals</span>
+                    <!-- Setup the fields to display the final data to the user and fill with nothing. -->
+                    <div class="fields">
+                        <div class="input-field">
+                            <div id="serviceTotal">Service Total: $0.00</div>
+                            <div id="tipTotal">Tip Total: $0.00</div>
+                            <div id="serviceRating">Based on Service Rating: </div>
+                            <div id="grandTotal">Grand Total: $0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Last but not least, the button to start the whole thing going -->
+                <div class="input-field">
+                    <button type="button" id="tipBtn" class="tipButton" onclick="submitData()">Calculate Tip</button>
+                </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
